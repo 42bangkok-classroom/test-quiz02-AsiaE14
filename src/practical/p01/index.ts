@@ -36,7 +36,7 @@ export async  function getPostalAddress() {
         const a = await axios.get<real[]>("https://jsonplaceholder.typicode.com/users");
         const data = a.data;
         if(!data ||data.length === 0){
-            return 0;
+            return [];
 
         }
         return data.map((r) =>({
@@ -48,7 +48,7 @@ export async  function getPostalAddress() {
 
 
     }catch(e){
-        return 0;
+        return [];
     }
 
 
