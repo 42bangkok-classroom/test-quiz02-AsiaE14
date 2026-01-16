@@ -27,7 +27,7 @@ interface real{
      id:number;
     name:string;
     phone:string;
-    address: A| null;
+    address: A;
 
 }
    
